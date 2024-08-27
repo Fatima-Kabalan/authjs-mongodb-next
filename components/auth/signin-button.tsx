@@ -1,6 +1,6 @@
 import { signIn, signOut } from "@/auth";
+import GithubSvg from "@/public/svg/GithubSvg";
 import GoogleSvg from "@/public/svg/GoogleSvg";
-import GitHubIcon from "@mui/icons-material/GitHub";
 
 export function SignIn() {
   return (
@@ -27,7 +27,9 @@ export function SignIn() {
         value="signInGitHub"
         className="flex gap-4 justify-center rounded-lg bg-black text-white text-lg p-4 w-full"
       >
-        <GitHubIcon />
+        <div className="w-6">
+          <GithubSvg />
+        </div>
         Sign in with GitHub
       </button>
       <button
