@@ -1,13 +1,14 @@
 import { signOut } from "@/auth";
 
-export function SignOut() {
+export default async function SignOut() {
+  const handleSignOut = async () => {
+    "use server";
+    await signOut();
+    console.log("signed out");
+  };
+
   return (
-    <form
-      action={async () => {
-        "use server";
-        await signOut();
-      }}
-    >
+    <form action={handleSignOut}>
       <button
         type="submit"
         name="action"

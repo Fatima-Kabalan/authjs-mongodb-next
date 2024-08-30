@@ -1,4 +1,4 @@
-import { SignOut } from "@/components/auth/signout-button";
+import SignOut from "@/components/auth/signout-button";
 
 export default function Dashboard() {
   return (
